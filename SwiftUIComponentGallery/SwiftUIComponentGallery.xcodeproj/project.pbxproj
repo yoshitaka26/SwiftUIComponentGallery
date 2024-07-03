@@ -12,6 +12,12 @@
 		E418D4B82C2FF1A0001313AA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E418D4B72C2FF1A0001313AA /* Item.swift */; };
 		E418D4BA2C2FF1A1001313AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E418D4B92C2FF1A1001313AA /* Assets.xcassets */; };
 		E418D4BD2C2FF1A1001313AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E418D4BC2C2FF1A1001313AA /* Preview Assets.xcassets */; };
+		E418D4C52C2FF391001313AA /* BasicLineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = E418D4C42C2FF391001313AA /* BasicLineChart.swift */; };
+		E418D4C72C2FFC5F001313AA /* ChartList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E418D4C62C2FFC5F001313AA /* ChartList.swift */; };
+		E418D4C92C301FB0001313AA /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E418D4C82C301FB0001313AA /* Data.swift */; };
+		E418D4CC2C3023E7001313AA /* TimeRangePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E418D4CB2C3023E7001313AA /* TimeRangePicker.swift */; };
+		E418D4CE2C302522001313AA /* BasicBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = E418D4CD2C302522001313AA /* BasicBarChart.swift */; };
+		E418D4D02C302D17001313AA /* BasicSectorChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = E418D4CF2C302D17001313AA /* BasicSectorChart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +27,12 @@
 		E418D4B72C2FF1A0001313AA /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		E418D4B92C2FF1A1001313AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E418D4BC2C2FF1A1001313AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E418D4C42C2FF391001313AA /* BasicLineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicLineChart.swift; sourceTree = "<group>"; };
+		E418D4C62C2FFC5F001313AA /* ChartList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartList.swift; sourceTree = "<group>"; };
+		E418D4C82C301FB0001313AA /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		E418D4CB2C3023E7001313AA /* TimeRangePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeRangePicker.swift; sourceTree = "<group>"; };
+		E418D4CD2C302522001313AA /* BasicBarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicBarChart.swift; sourceTree = "<group>"; };
+		E418D4CF2C302D17001313AA /* BasicSectorChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicSectorChart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,8 @@
 		E418D4B22C2FF19F001313AA /* SwiftUIComponentGallery */ = {
 			isa = PBXGroup;
 			children = (
+				E418D4CA2C3023CF001313AA /* Common */,
+				E418D4C32C2FF2D0001313AA /* Charts */,
 				E418D4B32C2FF1A0001313AA /* SwiftUIComponentGalleryApp.swift */,
 				E418D4B52C2FF1A0001313AA /* ContentView.swift */,
 				E418D4B72C2FF1A0001313AA /* Item.swift */,
@@ -68,6 +82,26 @@
 				E418D4BC2C2FF1A1001313AA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E418D4C32C2FF2D0001313AA /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				E418D4C82C301FB0001313AA /* Data.swift */,
+				E418D4C62C2FFC5F001313AA /* ChartList.swift */,
+				E418D4CD2C302522001313AA /* BasicBarChart.swift */,
+				E418D4CF2C302D17001313AA /* BasicSectorChart.swift */,
+				E418D4C42C2FF391001313AA /* BasicLineChart.swift */,
+			);
+			name = Charts;
+			sourceTree = "<group>";
+		};
+		E418D4CA2C3023CF001313AA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E418D4CB2C3023E7001313AA /* TimeRangePicker.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +175,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E418D4B62C2FF1A0001313AA /* ContentView.swift in Sources */,
+				E418D4C92C301FB0001313AA /* Data.swift in Sources */,
+				E418D4C72C2FFC5F001313AA /* ChartList.swift in Sources */,
 				E418D4B82C2FF1A0001313AA /* Item.swift in Sources */,
 				E418D4B42C2FF1A0001313AA /* SwiftUIComponentGalleryApp.swift in Sources */,
+				E418D4C52C2FF391001313AA /* BasicLineChart.swift in Sources */,
+				E418D4D02C302D17001313AA /* BasicSectorChart.swift in Sources */,
+				E418D4CC2C3023E7001313AA /* TimeRangePicker.swift in Sources */,
+				E418D4CE2C302522001313AA /* BasicBarChart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
