@@ -1,0 +1,15 @@
+{
+  "originHash" : "d6b839529dc4aeed3f13e81371929e6cb43fb7bd3c7611fbc1b2d719ad53f2f1",
+  "pins" : [
+    {
+      "identity" : "pagertabstripview",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:xmartlabs/PagerTabStripView.git",
+      "state" : {
+        "revision" : "39ec00d2577adf75d82d1c7023c56950b96d2298",
+        "version" : "4.0.0"
+      }
+    }
+  ],
+  "version" : 3
+}

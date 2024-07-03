@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4AA69B4D2C3504DA0061D48A /* PagerTabStripView in Frameworks */ = {isa = PBXBuildFile; productRef = 4AA69B4C2C3504DA0061D48A /* PagerTabStripView */; };
+		4AA69B4F2C3505050061D48A /* MyPagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA69B4E2C3505050061D48A /* MyPagerView.swift */; };
+		4AE30F182C353BC200557030 /* SearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE30F172C353BC200557030 /* SearchField.swift */; };
 		E418D4B42C2FF1A0001313AA /* SwiftUIComponentGalleryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E418D4B32C2FF1A0001313AA /* SwiftUIComponentGalleryApp.swift */; };
 		E418D4B62C2FF1A0001313AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E418D4B52C2FF1A0001313AA /* ContentView.swift */; };
 		E418D4B82C2FF1A0001313AA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E418D4B72C2FF1A0001313AA /* Item.swift */; };
@@ -21,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4AA69B4E2C3505050061D48A /* MyPagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPagerView.swift; sourceTree = "<group>"; };
+		4AE30F172C353BC200557030 /* SearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchField.swift; sourceTree = "<group>"; };
 		E418D4B02C2FF19F001313AA /* SwiftUIComponentGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIComponentGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E418D4B32C2FF1A0001313AA /* SwiftUIComponentGalleryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIComponentGalleryApp.swift; sourceTree = "<group>"; };
 		E418D4B52C2FF1A0001313AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,12 +45,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AA69B4D2C3504DA0061D48A /* PagerTabStripView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4AA69B4A2C34E5B20061D48A /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				4AA69B4E2C3505050061D48A /* MyPagerView.swift */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
 		E418D4A72C2FF19F001313AA = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +79,7 @@
 		E418D4B22C2FF19F001313AA /* SwiftUIComponentGallery */ = {
 			isa = PBXGroup;
 			children = (
+				4AA69B4A2C34E5B20061D48A /* Tab */,
 				E418D4CA2C3023CF001313AA /* Common */,
 				E418D4C32C2FF2D0001313AA /* Charts */,
 				E418D4B32C2FF1A0001313AA /* SwiftUIComponentGalleryApp.swift */,
@@ -100,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				E418D4CB2C3023E7001313AA /* TimeRangePicker.swift */,
+				4AE30F172C353BC200557030 /* SearchField.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -120,6 +136,9 @@
 			dependencies = (
 			);
 			name = SwiftUIComponentGallery;
+			packageProductDependencies = (
+				4AA69B4C2C3504DA0061D48A /* PagerTabStripView */,
+			);
 			productName = SwiftUIComponentGallery;
 			productReference = E418D4B02C2FF19F001313AA /* SwiftUIComponentGallery.app */;
 			productType = "com.apple.product-type.application";
@@ -148,6 +167,9 @@
 				Base,
 			);
 			mainGroup = E418D4A72C2FF19F001313AA;
+			packageReferences = (
+				4AA69B4B2C3504DA0061D48A /* XCRemoteSwiftPackageReference "PagerTabStripView" */,
+			);
 			productRefGroup = E418D4B12C2FF19F001313AA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -178,6 +200,8 @@
 				E418D4D22C34E491001313AA /* Data.swift in Sources */,
 				E418D4D92C34E499001313AA /* ChartList.swift in Sources */,
 				E418D4B82C2FF1A0001313AA /* Item.swift in Sources */,
+				4AE30F182C353BC200557030 /* SearchField.swift in Sources */,
+				4AA69B4F2C3505050061D48A /* MyPagerView.swift in Sources */,
 				E418D4B42C2FF1A0001313AA /* SwiftUIComponentGalleryApp.swift in Sources */,
 				E418D4CC2C3023E7001313AA /* TimeRangePicker.swift in Sources */,
 				E418D4D82C34E499001313AA /* BasicSectorChart.swift in Sources */,
@@ -388,6 +412,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4AA69B4B2C3504DA0061D48A /* XCRemoteSwiftPackageReference "PagerTabStripView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:xmartlabs/PagerTabStripView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4AA69B4C2C3504DA0061D48A /* PagerTabStripView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4AA69B4B2C3504DA0061D48A /* XCRemoteSwiftPackageReference "PagerTabStripView" */;
+			productName = PagerTabStripView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E418D4A82C2FF19F001313AA /* Project object */;
 }
