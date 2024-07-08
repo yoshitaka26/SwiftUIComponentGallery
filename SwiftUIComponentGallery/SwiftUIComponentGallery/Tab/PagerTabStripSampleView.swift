@@ -1,5 +1,5 @@
 //
-//  MyPagerView.swift
+//  PagerTabStripSampleView.swift
 //  SwiftUIComponentGallery
 //
 //  Created by yoshitaka on 2024/07/03.
@@ -8,7 +8,7 @@
 import PagerTabStripView
 import SwiftUI
 
-struct MyPagerView: View {
+struct PagerTabStripSampleView: View {
     @State private var query: String = ""
 
     var body: some View {
@@ -21,7 +21,7 @@ struct MyPagerView: View {
                 print(query)
             }
             .padding(.horizontal, 10)
-            PagerTabStripView() {
+            PagerTabStripView {
                 MyFirstView()
                     .pagerTabItem(tag: 1) {
                         TitleNavBarItem(title: "テストタイトル")
@@ -100,5 +100,5 @@ struct MyPagerView: View {
 }
 
 #Preview {
-    MyPagerView()
+    PagerTabStripSampleView()
 }
