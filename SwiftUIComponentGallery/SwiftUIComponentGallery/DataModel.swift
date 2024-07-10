@@ -15,8 +15,8 @@ struct Item: Identifiable {
     let date: Date
 }
 
-@Observable
-final class DataModel {
+@MainActor
+final class DataModel: ObservableObject {
     private var allItems: [Item] = [
         Item(sequentialId: 1, title: "買い物", description: "野菜と果物を買う", date: Date().addingTimeInterval(86400)),
         Item(sequentialId: 2, title: "ジム", description: "ウェイトトレーニング", date: Date().addingTimeInterval(172800)),
@@ -50,10 +50,10 @@ final class DataModel {
         Item(sequentialId: 30, title: "健康診断", description: "年次健康診断の予約", date: Date().addingTimeInterval(2592000))
     ]
 
-    var items: [Item] = []
-    var currentPage = 0
-    let itemsPerPage = 10
-    var isLoading = false
+    @Published var items: [Item] = []
+    @Published var currentPage = 0
+    @Published var itemsPerPage = 10
+    @Published var isLoading = false
 
     func refresh() async {
         items = []

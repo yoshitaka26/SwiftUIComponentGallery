@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ListWithScrollView: View {
-    @State private var viewModel = DataModel()
+    @StateObject private var viewModel = DataModel()
 
     var body: some View {
         ScrollView {
