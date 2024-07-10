@@ -17,6 +17,21 @@ struct ContentView: View {
                 } label: {
                     Text("チャート")
                 }
+                NavigationLink {
+                    ListView()
+                } label: {
+                    Text("リスト(List)")
+                }
+                NavigationLink {
+                    ListWithScrollView()
+                } label: {
+                    Text("リスト(ScrollView)")
+                }
+                NavigationLink {
+                    ListWithLazyVStack()
+                } label: {
+                    Text("リスト(LazyVStack)")
+                }
             }
         }
 //        .fullScreenCover(isPresented: .constant(true), content: {

@@ -2,7 +2,7 @@
 //  ListWithLazyVStack.swift
 //  SwiftUIComponentGallery
 //
-//  Created by Connehito262 on 2024/07/10.
+//  Created by yoshitaka on 2024/07/10.
 //
 
 import SwiftUI
@@ -27,16 +27,33 @@ struct ListWithLazyVStack: View {
                     .background(Color.indigo.opacity(0.2))
                     .frame(height: 100)
                     .onAppear {
-                        print("\(item.title) ✅appeared")
+                        print("\(item.sequentialId):\(item.title) ✅appeared")
                     }
                     .onDisappear {
-                        print("\(item.title) ❌disappeared")
+                        print("\(item.sequentialId):\(item.title) ❌disappeared")
                     }
+                }
+
+                if viewModel.hasMorePages {
+                    ProgressView()
+                        .onAppear {
+                            print("🟠追加ローディング")
+                            Task {
+                                await viewModel.loadNextPage()
+                            }
+                        }
+                        .tint(Color.red)
+                        .frame(maxWidth: .infinity)
+                        .background(Color.gray.opacity(0.2))
                 }
             }
         }
+        .task {
+            await viewModel.loadNextPage()
+        }
         .refreshable {
             do {
+                await viewModel.refresh()
                 try await Task.sleep(nanoseconds: 5_000_000_000)
             } catch {}
         }
