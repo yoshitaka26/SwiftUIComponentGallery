@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A42BCC62C3E1DB500736E0D /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A42BCC52C3E1DB500736E0D /* ListView.swift */; };
+		4A42BCC82C3E1DD000736E0D /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A42BCC72C3E1DD000736E0D /* DataModel.swift */; };
+		4A42BCCA2C3E216E00736E0D /* ListWithScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A42BCC92C3E216E00736E0D /* ListWithScrollView.swift */; };
+		4A42BCCC2C3E383500736E0D /* ListWithLazyVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A42BCCB2C3E383500736E0D /* ListWithLazyVStack.swift */; };
 		4AA69B4D2C3504DA0061D48A /* PagerTabStripView in Frameworks */ = {isa = PBXBuildFile; productRef = 4AA69B4C2C3504DA0061D48A /* PagerTabStripView */; };
 		4AA69B4F2C3505050061D48A /* PagerTabStripSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA69B4E2C3505050061D48A /* PagerTabStripSampleView.swift */; };
 		4AE30F182C353BC200557030 /* SearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE30F172C353BC200557030 /* SearchField.swift */; };
@@ -28,6 +32,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A42BCC52C3E1DB500736E0D /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		4A42BCC72C3E1DD000736E0D /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		4A42BCC92C3E216E00736E0D /* ListWithScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWithScrollView.swift; sourceTree = "<group>"; };
+		4A42BCCB2C3E383500736E0D /* ListWithLazyVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWithLazyVStack.swift; sourceTree = "<group>"; };
 		4AA69B4E2C3505050061D48A /* PagerTabStripSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerTabStripSampleView.swift; sourceTree = "<group>"; };
 		4AE30F172C353BC200557030 /* SearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchField.swift; sourceTree = "<group>"; };
 		4AE30F1D2C36365100557030 /* SimpleStickyHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleStickyHeader.swift; sourceTree = "<group>"; };
@@ -60,6 +68,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A42BCC42C3E1D9F00736E0D /* List */ = {
+			isa = PBXGroup;
+			children = (
+				4A42BCC52C3E1DB500736E0D /* ListView.swift */,
+				4A42BCC92C3E216E00736E0D /* ListWithScrollView.swift */,
+				4A42BCCB2C3E383500736E0D /* ListWithLazyVStack.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
 		4AA69B4A2C34E5B20061D48A /* Tab */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +116,8 @@
 		E418D4B22C2FF19F001313AA /* SwiftUIComponentGallery */ = {
 			isa = PBXGroup;
 			children = (
+				4A42BCC72C3E1DD000736E0D /* DataModel.swift */,
+				4A42BCC42C3E1D9F00736E0D /* List */,
 				E418D4B92C2FF1A1001313AA /* Assets.xcassets */,
 				E418D4B32C2FF1A0001313AA /* SwiftUIComponentGalleryApp.swift */,
 				E418D4B52C2FF1A0001313AA /* ContentView.swift */,
@@ -218,10 +238,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E418D4B62C2FF1A0001313AA /* ContentView.swift in Sources */,
+				4A42BCCC2C3E383500736E0D /* ListWithLazyVStack.swift in Sources */,
 				E418D4D22C34E491001313AA /* Data.swift in Sources */,
+				4A42BCC62C3E1DB500736E0D /* ListView.swift in Sources */,
 				E418D4D92C34E499001313AA /* ChartList.swift in Sources */,
 				4AE30F182C353BC200557030 /* SearchField.swift in Sources */,
+				4A42BCC82C3E1DD000736E0D /* DataModel.swift in Sources */,
 				4AE30F1E2C36365100557030 /* SimpleStickyHeader.swift in Sources */,
+				4A42BCCA2C3E216E00736E0D /* ListWithScrollView.swift in Sources */,
 				4AE30F272C37B6A200557030 /* StickyHeaderTabView.swift in Sources */,
 				4AA69B4F2C3505050061D48A /* PagerTabStripSampleView.swift in Sources */,
 				E418D4B42C2FF1A0001313AA /* SwiftUIComponentGalleryApp.swift in Sources */,
@@ -289,7 +313,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -346,7 +370,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
