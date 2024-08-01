@@ -13,6 +13,7 @@
 		4A42BCCC2C3E383500736E0D /* ListWithLazyVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A42BCCB2C3E383500736E0D /* ListWithLazyVStack.swift */; };
 		4AA69B4D2C3504DA0061D48A /* PagerTabStripView in Frameworks */ = {isa = PBXBuildFile; productRef = 4AA69B4C2C3504DA0061D48A /* PagerTabStripView */; };
 		4AA69B4F2C3505050061D48A /* PagerTabStripSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA69B4E2C3505050061D48A /* PagerTabStripSampleView.swift */; };
+		4AC5AB542C3FD5B900F6AF30 /* ScrollPositionTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC5AB532C3FD5B900F6AF30 /* ScrollPositionTracker.swift */; };
 		4AE30F182C353BC200557030 /* SearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE30F172C353BC200557030 /* SearchField.swift */; };
 		4AE30F1B2C3546BB00557030 /* ScalingHeaderScrollView in Frameworks */ = {isa = PBXBuildFile; productRef = 4AE30F1A2C3546BB00557030 /* ScalingHeaderScrollView */; };
 		4AE30F1E2C36365100557030 /* SimpleStickyHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE30F1D2C36365100557030 /* SimpleStickyHeader.swift */; };
@@ -37,6 +38,7 @@
 		4A42BCC92C3E216E00736E0D /* ListWithScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWithScrollView.swift; sourceTree = "<group>"; };
 		4A42BCCB2C3E383500736E0D /* ListWithLazyVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWithLazyVStack.swift; sourceTree = "<group>"; };
 		4AA69B4E2C3505050061D48A /* PagerTabStripSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerTabStripSampleView.swift; sourceTree = "<group>"; };
+		4AC5AB532C3FD5B900F6AF30 /* ScrollPositionTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPositionTracker.swift; sourceTree = "<group>"; };
 		4AE30F172C353BC200557030 /* SearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchField.swift; sourceTree = "<group>"; };
 		4AE30F1D2C36365100557030 /* SimpleStickyHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleStickyHeader.swift; sourceTree = "<group>"; };
 		4AE30F1F2C3681BB00557030 /* ColorScalingHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorScalingHeader.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 			children = (
 				E418D4CB2C3023E7001313AA /* TimeRangePicker.swift */,
 				4AE30F172C353BC200557030 /* SearchField.swift */,
+				4AC5AB532C3FD5B900F6AF30 /* ScrollPositionTracker.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				4A42BCCC2C3E383500736E0D /* ListWithLazyVStack.swift in Sources */,
 				E418D4D22C34E491001313AA /* Data.swift in Sources */,
 				4A42BCC62C3E1DB500736E0D /* ListView.swift in Sources */,
+				4AC5AB542C3FD5B900F6AF30 /* ScrollPositionTracker.swift in Sources */,
 				E418D4D92C34E499001313AA /* ChartList.swift in Sources */,
 				4AE30F182C353BC200557030 /* SearchField.swift in Sources */,
 				4A42BCC82C3E1DD000736E0D /* DataModel.swift in Sources */,

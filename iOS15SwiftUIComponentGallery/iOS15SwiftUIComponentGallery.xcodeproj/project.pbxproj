@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A9053412C5BEA9700CB1E14 /* ScrollPositionTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9053402C5BEA9700CB1E14 /* ScrollPositionTracker.swift */; };
 		E41F61D02C3EB58700EA93AB /* iOS15SwiftUIComponentGalleryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41F61CF2C3EB58700EA93AB /* iOS15SwiftUIComponentGalleryApp.swift */; };
 		E41F61D22C3EB58700EA93AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41F61D12C3EB58700EA93AB /* ContentView.swift */; };
 		E41F61D62C3EB58800EA93AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E41F61D52C3EB58800EA93AB /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A9053402C5BEA9700CB1E14 /* ScrollPositionTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrollPositionTracker.swift; path = ../Common/ScrollPositionTracker.swift; sourceTree = "<group>"; };
 		E41F61CC2C3EB58700EA93AB /* iOS15SwiftUIComponentGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS15SwiftUIComponentGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E41F61CF2C3EB58700EA93AB /* iOS15SwiftUIComponentGalleryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS15SwiftUIComponentGalleryApp.swift; sourceTree = "<group>"; };
 		E41F61D12C3EB58700EA93AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				E41F61DF2C3EB67000EA93AB /* ListView.swift */,
 				E41F61E02C3EB67000EA93AB /* ListWithLazyVStack.swift */,
 				E41F61E12C3EB67000EA93AB /* ListWithScrollView.swift */,
+				4A9053402C5BEA9700CB1E14 /* ScrollPositionTracker.swift */,
 			);
 			name = List;
 			path = ../../SwiftUIComponentGallery/SwiftUIComponentGallery/List;
@@ -159,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E41F61D22C3EB58700EA93AB /* ContentView.swift in Sources */,
+				4A9053412C5BEA9700CB1E14 /* ScrollPositionTracker.swift in Sources */,
 				E41F61D02C3EB58700EA93AB /* iOS15SwiftUIComponentGalleryApp.swift in Sources */,
 				E41F61E32C3EB67000EA93AB /* ListView.swift in Sources */,
 				E41F61E42C3EB67000EA93AB /* ListWithLazyVStack.swift in Sources */,

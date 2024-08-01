@@ -14,8 +14,6 @@ struct ListWithLazyVStack: View {
         ScrollView {
             LazyVStack(spacing: 0) {
                 ForEach(viewModel.items) { item in
-                    Color.clear
-                        .frame(height: 0)
                     VStack {
                         Text(item.title)
                             .font(.headline)
@@ -25,7 +23,7 @@ struct ListWithLazyVStack: View {
                             .font(.subheadline)
                     }
                     .background(Color.indigo.opacity(0.2))
-                    .frame(height: 100)
+                    .frame(height: 200)
                     .onAppear {
                         print("\(item.sequentialId):\(item.title) ✅appeared")
                     }
