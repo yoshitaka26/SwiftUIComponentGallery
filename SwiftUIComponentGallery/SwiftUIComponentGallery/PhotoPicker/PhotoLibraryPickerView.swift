@@ -1,7 +1,7 @@
 import SwiftUI
 import PhotosUI
 
-struct ImagePickerView: UIViewControllerRepresentable {
+struct PhotoLibraryPickerView: UIViewControllerRepresentable {
     @Binding var image: UIImage?
     @Environment(\.presentationMode) private var presentationMode
 
@@ -20,9 +20,9 @@ struct ImagePickerView: UIViewControllerRepresentable {
     }
 
     class Coordinator: NSObject, PHPickerViewControllerDelegate {
-        let parent: ImagePickerView
+        let parent: PhotoLibraryPickerView
 
-        init(_ parent: ImagePickerView) {
+        init(_ parent: PhotoLibraryPickerView) {
             self.parent = parent
         }
 

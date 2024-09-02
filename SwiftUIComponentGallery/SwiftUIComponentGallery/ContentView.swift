@@ -13,6 +13,11 @@ struct ContentView: View {
         NavigationStack {
             List {
                 NavigationLink {
+                    PhotoPickerView()
+                } label: {
+                    Text("写真")
+                }
+                NavigationLink {
                     ChartList()
                 } label: {
                     Text("チャート")

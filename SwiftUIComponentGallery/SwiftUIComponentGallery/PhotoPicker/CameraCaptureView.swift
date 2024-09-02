@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct CameraPickerView: UIViewControllerRepresentable {
+struct CameraCaptureView: UIViewControllerRepresentable {
     @Binding var image: UIImage?
     @Environment(\.presentationMode) private var presentationMode
 
@@ -19,9 +19,9 @@ struct CameraPickerView: UIViewControllerRepresentable {
     }
 
     class Coordinator: NSObject, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
-        let parent: CameraPickerView
+        let parent: CameraCaptureView
 
-        init(_ parent: CameraPickerView) {
+        init(_ parent: CameraCaptureView) {
             self.parent = parent
         }
 

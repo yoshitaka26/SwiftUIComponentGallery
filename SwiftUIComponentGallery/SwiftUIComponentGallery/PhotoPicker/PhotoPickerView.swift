@@ -1,35 +1,40 @@
 import SwiftUI
 
 struct PhotoPickerView: View {
-    @State private var showImagePicker = false
     @State var image: UIImage?
+    @State private var showImagePickerDialog = false
     @State private var showCamera: Bool = false
     @State private var showLibrary: Bool = false
 
     var body: some View {
         VStack(spacing: 20) {
-            if let image = image {
+            Text("写真を追加")
+
+            if let image {
                 Image(uiImage: image)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-            }
 
-            Text("写真を追加")
-
-            Button("選択する") {
-                showImagePicker = true
+                Button("削除する") {
+                    self.image = nil
+                }
+            } else {
+                Button("選択する") {
+                    showImagePickerDialog = true
+                }
             }
         }
         .fullScreenCover(isPresented: $showCamera) {
-            CameraPickerView(image: $image)
+            CameraCaptureView(image: $image)
                 .ignoresSafeArea()
         }
         .sheet(isPresented: $showLibrary, content: {
-            ImagePickerView(image: $image)
+            PhotoLibraryPickerView(image: $image)
+                .ignoresSafeArea()
         })
         .confirmationDialog(
             "",
-            isPresented: $showImagePicker,
+            isPresented: $showImagePickerDialog,
             titleVisibility: .hidden
         ) {
             Button {
@@ -43,7 +48,7 @@ struct PhotoPickerView: View {
                 Text("アルバムから選ぶ")
             }
             Button("キャンセル", role: .cancel) {
-                showImagePicker = false
+                showImagePickerDialog = false
             }
         }
     }
