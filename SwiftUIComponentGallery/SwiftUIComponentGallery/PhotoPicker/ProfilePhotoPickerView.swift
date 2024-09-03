@@ -14,9 +14,7 @@ struct ProfilePhotoPickerView: View {
                 }
             }
             .listRowBackground(Color.clear)
-            #if !os(macOS)
-            .padding([.top], 10)
-            #endif
+
             Section {
                 TextField("First Name",
                           text: $viewModel.firstName,
