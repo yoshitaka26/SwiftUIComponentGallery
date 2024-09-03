@@ -13,9 +13,14 @@ struct ContentView: View {
         NavigationStack {
             List {
                 NavigationLink {
-                    PhotoPickerView()
+                    LegacyPhotoPickerView()
                 } label: {
-                    Text("写真")
+                    Text("カメラと写真")
+                }
+                NavigationLink {
+                    ProfilePhotoPickerView()
+                } label: {
+                    Text("プロフィール写真")
                 }
                 NavigationLink {
                     ChartList()

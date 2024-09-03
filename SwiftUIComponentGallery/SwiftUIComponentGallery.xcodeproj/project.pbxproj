@@ -11,9 +11,11 @@
 		4A42BCC82C3E1DD000736E0D /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A42BCC72C3E1DD000736E0D /* DataModel.swift */; };
 		4A42BCCA2C3E216E00736E0D /* ListWithScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A42BCC92C3E216E00736E0D /* ListWithScrollView.swift */; };
 		4A42BCCC2C3E383500736E0D /* ListWithLazyVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A42BCCB2C3E383500736E0D /* ListWithLazyVStack.swift */; };
+		4A9CE73A2C874BE200CA0BBB /* ProfilePhotoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9CE7392C874BE200CA0BBB /* ProfilePhotoPickerView.swift */; };
+		4A9CE73C2C874C3D00CA0BBB /* ProfilePhotoPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9CE73B2C874C3D00CA0BBB /* ProfilePhotoPickerViewModel.swift */; };
 		4AA69B4D2C3504DA0061D48A /* PagerTabStripView in Frameworks */ = {isa = PBXBuildFile; productRef = 4AA69B4C2C3504DA0061D48A /* PagerTabStripView */; };
 		4AA69B4F2C3505050061D48A /* PagerTabStripSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA69B4E2C3505050061D48A /* PagerTabStripSampleView.swift */; };
-		4AB93CA42C79A30200FB54F6 /* PhotoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB93CA32C79A30200FB54F6 /* PhotoPickerView.swift */; };
+		4AB93CA42C79A30200FB54F6 /* LegacyPhotoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB93CA32C79A30200FB54F6 /* LegacyPhotoPickerView.swift */; };
 		4AB93CA82C81946300FB54F6 /* PhotoLibraryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB93CA72C81946300FB54F6 /* PhotoLibraryPickerView.swift */; };
 		4AB93CAA2C81F4B500FB54F6 /* CameraCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB93CA92C81F4B500FB54F6 /* CameraCaptureView.swift */; };
 		4AC5AB542C3FD5B900F6AF30 /* ScrollPositionTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC5AB532C3FD5B900F6AF30 /* ScrollPositionTracker.swift */; };
@@ -40,8 +42,10 @@
 		4A42BCC72C3E1DD000736E0D /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		4A42BCC92C3E216E00736E0D /* ListWithScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWithScrollView.swift; sourceTree = "<group>"; };
 		4A42BCCB2C3E383500736E0D /* ListWithLazyVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWithLazyVStack.swift; sourceTree = "<group>"; };
+		4A9CE7392C874BE200CA0BBB /* ProfilePhotoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoPickerView.swift; sourceTree = "<group>"; };
+		4A9CE73B2C874C3D00CA0BBB /* ProfilePhotoPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoPickerViewModel.swift; sourceTree = "<group>"; };
 		4AA69B4E2C3505050061D48A /* PagerTabStripSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerTabStripSampleView.swift; sourceTree = "<group>"; };
-		4AB93CA32C79A30200FB54F6 /* PhotoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerView.swift; sourceTree = "<group>"; };
+		4AB93CA32C79A30200FB54F6 /* LegacyPhotoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyPhotoPickerView.swift; sourceTree = "<group>"; };
 		4AB93CA72C81946300FB54F6 /* PhotoLibraryPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryPickerView.swift; sourceTree = "<group>"; };
 		4AB93CA92C81F4B500FB54F6 /* CameraCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCaptureView.swift; sourceTree = "<group>"; };
 		4AC5AB532C3FD5B900F6AF30 /* ScrollPositionTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPositionTracker.swift; sourceTree = "<group>"; };
@@ -98,9 +102,11 @@
 		4AB93CA22C79A2F000FB54F6 /* PhotoPicker */ = {
 			isa = PBXGroup;
 			children = (
-				4AB93CA32C79A30200FB54F6 /* PhotoPickerView.swift */,
+				4AB93CA32C79A30200FB54F6 /* LegacyPhotoPickerView.swift */,
 				4AB93CA72C81946300FB54F6 /* PhotoLibraryPickerView.swift */,
 				4AB93CA92C81F4B500FB54F6 /* CameraCaptureView.swift */,
+				4A9CE7392C874BE200CA0BBB /* ProfilePhotoPickerView.swift */,
+				4A9CE73B2C874C3D00CA0BBB /* ProfilePhotoPickerViewModel.swift */,
 			);
 			path = PhotoPicker;
 			sourceTree = "<group>";
@@ -260,7 +266,8 @@
 				E418D4B62C2FF1A0001313AA /* ContentView.swift in Sources */,
 				4A42BCCC2C3E383500736E0D /* ListWithLazyVStack.swift in Sources */,
 				E418D4D22C34E491001313AA /* Data.swift in Sources */,
-				4AB93CA42C79A30200FB54F6 /* PhotoPickerView.swift in Sources */,
+				4A9CE73C2C874C3D00CA0BBB /* ProfilePhotoPickerViewModel.swift in Sources */,
+				4AB93CA42C79A30200FB54F6 /* LegacyPhotoPickerView.swift in Sources */,
 				4AB93CA82C81946300FB54F6 /* PhotoLibraryPickerView.swift in Sources */,
 				4A42BCC62C3E1DB500736E0D /* ListView.swift in Sources */,
 				4AC5AB542C3FD5B900F6AF30 /* ScrollPositionTracker.swift in Sources */,
@@ -270,6 +277,7 @@
 				4AE30F1E2C36365100557030 /* SimpleStickyHeader.swift in Sources */,
 				4A42BCCA2C3E216E00736E0D /* ListWithScrollView.swift in Sources */,
 				4AE30F272C37B6A200557030 /* StickyHeaderTabView.swift in Sources */,
+				4A9CE73A2C874BE200CA0BBB /* ProfilePhotoPickerView.swift in Sources */,
 				4AB93CAA2C81F4B500FB54F6 /* CameraCaptureView.swift in Sources */,
 				4AA69B4F2C3505050061D48A /* PagerTabStripSampleView.swift in Sources */,
 				E418D4B42C2FF1A0001313AA /* SwiftUIComponentGalleryApp.swift in Sources */,

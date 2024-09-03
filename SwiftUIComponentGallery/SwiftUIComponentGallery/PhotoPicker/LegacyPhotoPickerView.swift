@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct PhotoPickerView: View {
+struct LegacyPhotoPickerView: View {
     @State var image: UIImage?
     @State private var showImagePickerDialog = false
     @State private var showCamera: Bool = false
@@ -55,5 +55,5 @@ struct PhotoPickerView: View {
 }
 
 #Preview {
-    PhotoPickerView()
+    LegacyPhotoPickerView()
 }
