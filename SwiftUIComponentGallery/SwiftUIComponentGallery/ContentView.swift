@@ -13,6 +13,11 @@ struct ContentView: View {
         NavigationStack {
             List {
                 NavigationLink {
+                    DragAndDropView()
+                } label: {
+                    Text("ドラッグアンドドロップ")
+                }
+                NavigationLink {
                     LegacyPhotoPickerView()
                 } label: {
                     Text("カメラと写真")

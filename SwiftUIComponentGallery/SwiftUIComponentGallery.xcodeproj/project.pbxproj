@@ -17,6 +17,7 @@
 		4A9CE7402C874D5B00CA0BBB /* InlinePhotosPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9CE73F2C874D5B00CA0BBB /* InlinePhotosPickerViewModel.swift */; };
 		4A9CE7422C8810BD00CA0BBB /* InlineMultiPhotosPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9CE7412C8810BD00CA0BBB /* InlineMultiPhotosPickerView.swift */; };
 		4A9CE7442C8810CB00CA0BBB /* InlineMultiPhotosPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9CE7432C8810CB00CA0BBB /* InlineMultiPhotosPickerViewModel.swift */; };
+		4A9CE7472C897BA300CA0BBB /* DragAndDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9CE7462C897BA300CA0BBB /* DragAndDropView.swift */; };
 		4AA69B4D2C3504DA0061D48A /* PagerTabStripView in Frameworks */ = {isa = PBXBuildFile; productRef = 4AA69B4C2C3504DA0061D48A /* PagerTabStripView */; };
 		4AA69B4F2C3505050061D48A /* PagerTabStripSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA69B4E2C3505050061D48A /* PagerTabStripSampleView.swift */; };
 		4AB93CA42C79A30200FB54F6 /* LegacyPhotoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB93CA32C79A30200FB54F6 /* LegacyPhotoPickerView.swift */; };
@@ -52,6 +53,7 @@
 		4A9CE73F2C874D5B00CA0BBB /* InlinePhotosPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlinePhotosPickerViewModel.swift; sourceTree = "<group>"; };
 		4A9CE7412C8810BD00CA0BBB /* InlineMultiPhotosPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineMultiPhotosPickerView.swift; sourceTree = "<group>"; };
 		4A9CE7432C8810CB00CA0BBB /* InlineMultiPhotosPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineMultiPhotosPickerViewModel.swift; sourceTree = "<group>"; };
+		4A9CE7462C897BA300CA0BBB /* DragAndDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragAndDropView.swift; sourceTree = "<group>"; };
 		4AA69B4E2C3505050061D48A /* PagerTabStripSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerTabStripSampleView.swift; sourceTree = "<group>"; };
 		4AB93CA32C79A30200FB54F6 /* LegacyPhotoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyPhotoPickerView.swift; sourceTree = "<group>"; };
 		4AB93CA72C81946300FB54F6 /* PhotoLibraryPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryPickerView.swift; sourceTree = "<group>"; };
@@ -96,6 +98,14 @@
 				4A42BCCB2C3E383500736E0D /* ListWithLazyVStack.swift */,
 			);
 			path = List;
+			sourceTree = "<group>";
+		};
+		4A9CE7452C897B7400CA0BBB /* DragAndDrop */ = {
+			isa = PBXGroup;
+			children = (
+				4A9CE7462C897BA300CA0BBB /* DragAndDropView.swift */,
+			);
+			path = DragAndDrop;
 			sourceTree = "<group>";
 		};
 		4AA69B4A2C34E5B20061D48A /* Tab */ = {
@@ -152,16 +162,17 @@
 		E418D4B22C2FF19F001313AA /* SwiftUIComponentGallery */ = {
 			isa = PBXGroup;
 			children = (
-				4A42BCC72C3E1DD000736E0D /* DataModel.swift */,
-				4AB93CA22C79A2F000FB54F6 /* PhotoPicker */,
-				4A42BCC42C3E1D9F00736E0D /* List */,
 				E418D4B92C2FF1A1001313AA /* Assets.xcassets */,
-				E418D4B32C2FF1A0001313AA /* SwiftUIComponentGalleryApp.swift */,
-				E418D4B52C2FF1A0001313AA /* ContentView.swift */,
 				E418D4C32C2FF2D0001313AA /* Charts */,
 				E418D4CA2C3023CF001313AA /* Common */,
+				E418D4B52C2FF1A0001313AA /* ContentView.swift */,
+				4A42BCC72C3E1DD000736E0D /* DataModel.swift */,
+				4A9CE7452C897B7400CA0BBB /* DragAndDrop */,
+				4A42BCC42C3E1D9F00736E0D /* List */,
+				4AB93CA22C79A2F000FB54F6 /* PhotoPicker */,
 				E418D4BB2C2FF1A1001313AA /* Preview Content */,
 				4AE30F1C2C3635A900557030 /* StickyHeader */,
+				E418D4B32C2FF1A0001313AA /* SwiftUIComponentGalleryApp.swift */,
 				4AA69B4A2C34E5B20061D48A /* Tab */,
 			);
 			path = SwiftUIComponentGallery;
@@ -295,6 +306,7 @@
 				4A9CE73A2C874BE200CA0BBB /* ProfilePhotoPickerView.swift in Sources */,
 				4AB93CAA2C81F4B500FB54F6 /* CameraCaptureView.swift in Sources */,
 				4AA69B4F2C3505050061D48A /* PagerTabStripSampleView.swift in Sources */,
+				4A9CE7472C897BA300CA0BBB /* DragAndDropView.swift in Sources */,
 				E418D4B42C2FF1A0001313AA /* SwiftUIComponentGalleryApp.swift in Sources */,
 				E418D4CC2C3023E7001313AA /* TimeRangePicker.swift in Sources */,
 				4AE30F202C3681BB00557030 /* ColorScalingHeader.swift in Sources */,
