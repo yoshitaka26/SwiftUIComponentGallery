@@ -1,7 +1,6 @@
 import SwiftUI
 import PhotosUI
 
-/// A view model that integrates a Photos picker.
 @MainActor final class InlinePhotosPickerViewModel: ObservableObject {
 
     enum ImageState {

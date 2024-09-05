@@ -28,6 +28,11 @@ struct ContentView: View {
                     Text("インライン写真")
                 }
                 NavigationLink {
+                    InlineMultiPhotosPickerView()
+                } label: {
+                    Text("インライン複数写真")
+                }
+                NavigationLink {
                     ChartList()
                 } label: {
                     Text("チャート")

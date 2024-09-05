@@ -15,6 +15,8 @@
 		4A9CE73C2C874C3D00CA0BBB /* ProfilePhotoPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9CE73B2C874C3D00CA0BBB /* ProfilePhotoPickerViewModel.swift */; };
 		4A9CE73E2C874D4900CA0BBB /* InlinePhotosPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9CE73D2C874D4900CA0BBB /* InlinePhotosPickerView.swift */; };
 		4A9CE7402C874D5B00CA0BBB /* InlinePhotosPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9CE73F2C874D5B00CA0BBB /* InlinePhotosPickerViewModel.swift */; };
+		4A9CE7422C8810BD00CA0BBB /* InlineMultiPhotosPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9CE7412C8810BD00CA0BBB /* InlineMultiPhotosPickerView.swift */; };
+		4A9CE7442C8810CB00CA0BBB /* InlineMultiPhotosPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9CE7432C8810CB00CA0BBB /* InlineMultiPhotosPickerViewModel.swift */; };
 		4AA69B4D2C3504DA0061D48A /* PagerTabStripView in Frameworks */ = {isa = PBXBuildFile; productRef = 4AA69B4C2C3504DA0061D48A /* PagerTabStripView */; };
 		4AA69B4F2C3505050061D48A /* PagerTabStripSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA69B4E2C3505050061D48A /* PagerTabStripSampleView.swift */; };
 		4AB93CA42C79A30200FB54F6 /* LegacyPhotoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB93CA32C79A30200FB54F6 /* LegacyPhotoPickerView.swift */; };
@@ -48,6 +50,8 @@
 		4A9CE73B2C874C3D00CA0BBB /* ProfilePhotoPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoPickerViewModel.swift; sourceTree = "<group>"; };
 		4A9CE73D2C874D4900CA0BBB /* InlinePhotosPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlinePhotosPickerView.swift; sourceTree = "<group>"; };
 		4A9CE73F2C874D5B00CA0BBB /* InlinePhotosPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlinePhotosPickerViewModel.swift; sourceTree = "<group>"; };
+		4A9CE7412C8810BD00CA0BBB /* InlineMultiPhotosPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineMultiPhotosPickerView.swift; sourceTree = "<group>"; };
+		4A9CE7432C8810CB00CA0BBB /* InlineMultiPhotosPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineMultiPhotosPickerViewModel.swift; sourceTree = "<group>"; };
 		4AA69B4E2C3505050061D48A /* PagerTabStripSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerTabStripSampleView.swift; sourceTree = "<group>"; };
 		4AB93CA32C79A30200FB54F6 /* LegacyPhotoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyPhotoPickerView.swift; sourceTree = "<group>"; };
 		4AB93CA72C81946300FB54F6 /* PhotoLibraryPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryPickerView.swift; sourceTree = "<group>"; };
@@ -113,6 +117,8 @@
 				4A9CE73B2C874C3D00CA0BBB /* ProfilePhotoPickerViewModel.swift */,
 				4A9CE73D2C874D4900CA0BBB /* InlinePhotosPickerView.swift */,
 				4A9CE73F2C874D5B00CA0BBB /* InlinePhotosPickerViewModel.swift */,
+				4A9CE7412C8810BD00CA0BBB /* InlineMultiPhotosPickerView.swift */,
+				4A9CE7432C8810CB00CA0BBB /* InlineMultiPhotosPickerViewModel.swift */,
 			);
 			path = PhotoPicker;
 			sourceTree = "<group>";
@@ -273,6 +279,7 @@
 				4A42BCCC2C3E383500736E0D /* ListWithLazyVStack.swift in Sources */,
 				E418D4D22C34E491001313AA /* Data.swift in Sources */,
 				4A9CE73C2C874C3D00CA0BBB /* ProfilePhotoPickerViewModel.swift in Sources */,
+				4A9CE7422C8810BD00CA0BBB /* InlineMultiPhotosPickerView.swift in Sources */,
 				4AB93CA42C79A30200FB54F6 /* LegacyPhotoPickerView.swift in Sources */,
 				4AB93CA82C81946300FB54F6 /* PhotoLibraryPickerView.swift in Sources */,
 				4A42BCC62C3E1DB500736E0D /* ListView.swift in Sources */,
@@ -294,6 +301,7 @@
 				4AE30F222C36826000557030 /* RequestScalingHeader.swift in Sources */,
 				E418D4D82C34E499001313AA /* BasicSectorChart.swift in Sources */,
 				E418D4D72C34E499001313AA /* BasicLineChart.swift in Sources */,
+				4A9CE7442C8810CB00CA0BBB /* InlineMultiPhotosPickerViewModel.swift in Sources */,
 				E418D4DA2C34E499001313AA /* BasicBarChart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
