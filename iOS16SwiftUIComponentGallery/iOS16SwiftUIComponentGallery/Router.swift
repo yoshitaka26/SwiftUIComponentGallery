@@ -1,14 +1,10 @@
-//
-//  Router.swift
-//  iOS16SwiftUIComponentGallery
-//
-//  Created by Connehito262 on 2024/11/27.
-//
 
 import SwiftUI
+import Combine
 
 class Router: ObservableObject {
     @Published var selection: Tab = .first
+    @Published var fullScreenWithNavigationPath: NavigationPath = .init()
     @Published var tabFirstPath: NavigationPath = .init()
     @Published var tabSecondPath: NavigationPath = .init()
     @Published var tabThirdPath: NavigationPath = .init()
@@ -23,4 +19,12 @@ class Router: ObservableObject {
             tabThirdPath.append(screen)
         }
     }
+
+    func pushFullScreenWithNavigationPath(_ screen: Screen) {
+        fullScreenWithNavigationPath.append(screen)
+    }
+
+    let fullScreenCoverItemTrigger = PassthroughSubject<Screen, Never>()
+
+    let fullScreenWithNavigationCoverItemTrigger = PassthroughSubject<Screen, Never>()
 }

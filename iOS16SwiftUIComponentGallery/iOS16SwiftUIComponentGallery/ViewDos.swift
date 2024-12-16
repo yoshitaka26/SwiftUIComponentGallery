@@ -1,20 +1,37 @@
-//
-//  ViewDos.swift
-//  iOS16SwiftUIComponentGallery
-//
-//  Created by Connehito262 on 2024/11/27.
-//
 
 import SwiftUI
 
 struct ViewDos: View {
+    @Environment(\.dismiss) private var dismiss
     @EnvironmentObject var router: Router
 
     var body: some View {
-        Text("Dos")
+        ZStack {
+            Color.yellow
+            VStack {
+                Text("Dos")
 
-        Button("add Tres") {
-            router.push(.tres)
+                Button("push tres") {
+                    router.push(.tres)
+                }
+
+                Button("present full screen tres") {
+                    router.fullScreenCoverItemTrigger.send(.tres)
+                }
+
+                Button("present full screen with navigation tres") {
+                    router.fullScreenWithNavigationCoverItemTrigger.send(.tres)
+                }
+
+                Button("push full screen with navigation tres") {
+                    router.pushFullScreenWithNavigationPath(.tres)
+                }
+
+
+                Button("dismiss") {
+                    dismiss()
+                }
+            }
         }
     }
 }

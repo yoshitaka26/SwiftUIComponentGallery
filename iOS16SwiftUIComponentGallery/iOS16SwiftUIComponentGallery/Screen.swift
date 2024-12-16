@@ -1,13 +1,9 @@
-//
-//  Screen.swift
-//  iOS16SwiftUIComponentGallery
-//
-//  Created by Connehito262 on 2024/11/27.
-//
 
 import SwiftUI
 
-enum Screen: Equatable {
+enum Screen: Identifiable {
+    var id: String { UUID().uuidString }
+
     case uno
     case dos
     case tres
@@ -18,6 +14,23 @@ enum Screen: Equatable {
         case .uno: ViewUno()
         case .dos: ViewDos()
         case .tres: ViewTres()
+        }
+    }
+
+    @ViewBuilder
+    func viewFillScreen(with item: Binding<Screen?>) -> some View{
+        FullScreenCoverView(currentScreen: item) {
+            view()
+        }
+    }
+
+    @ViewBuilder
+    func viewFillScreenWithNavigation(path: Binding<NavigationPath>, with item: Binding<Screen?>) -> some View{
+        NavigationStack(path: path) {
+            view()
+                .navigationDestination(for: Screen.self) { screen in
+                    screen.view()
+                }
         }
     }
 }

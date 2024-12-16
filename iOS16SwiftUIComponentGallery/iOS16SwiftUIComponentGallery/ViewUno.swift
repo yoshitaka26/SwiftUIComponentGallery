@@ -1,20 +1,36 @@
-//
-//  ViewUno.swift
-//  iOS16SwiftUIComponentGallery
-//
-//  Created by Connehito262 on 2024/11/27.
-//
 
 import SwiftUI
 
 struct ViewUno: View {
+    @Environment(\.dismiss) private var dismiss
     @EnvironmentObject var router: Router
 
     var body: some View {
-        Text("Uno")
+        ZStack {
+            Color.red
+            VStack {
+                Text("Uno")
 
-        Button("add dos") {
-            router.push(.dos)
+                Button("push dos") {
+                    router.push(.dos)
+                }
+
+                Button("present full screen dos") {
+                    router.fullScreenCoverItemTrigger.send(.dos)
+                }
+
+                Button("present full screen with navigation dos") {
+                    router.fullScreenWithNavigationCoverItemTrigger.send(.dos)
+                }
+
+                Button("push full screen with navigation dos") {
+                    router.pushFullScreenWithNavigationPath(.dos)
+                }
+
+                Button("dismiss") {
+                    dismiss()
+                }
+            }
         }
     }
 }

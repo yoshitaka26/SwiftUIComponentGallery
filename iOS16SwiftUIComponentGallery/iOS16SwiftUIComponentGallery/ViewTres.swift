@@ -1,20 +1,36 @@
-//
-//  ViewTres.swift
-//  iOS16SwiftUIComponentGallery
-//
-//  Created by Connehito262 on 2024/11/27.
-//
 
 import SwiftUI
 
 struct ViewTres: View {
+    @Environment(\.dismiss) private var dismiss
     @EnvironmentObject var router: Router
 
     var body: some View {
-        Text("Tres")
+        ZStack {
+            Color.green
+            VStack {
+                Text("Tres")
 
-        Button("add Uno") {
-            router.push(.uno)
+                Button("push Uno") {
+                    router.push(.uno)
+                }
+
+                Button("present full screen Uno") {
+                    router.fullScreenCoverItemTrigger.send(.uno)
+                }
+
+                Button("present full screen with navigation uno") {
+                    router.fullScreenWithNavigationCoverItemTrigger.send(.uno)
+                }
+
+                Button("push full screen with navigation uno") {
+                    router.pushFullScreenWithNavigationPath(.uno)
+                }
+
+                Button("dismiss") {
+                    dismiss()
+                }
+            }
         }
     }
 }
