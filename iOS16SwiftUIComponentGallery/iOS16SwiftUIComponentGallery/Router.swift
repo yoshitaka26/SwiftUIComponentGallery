@@ -9,6 +9,12 @@ class Router: ObservableObject {
     @Published var tabSecondPath: NavigationPath = .init()
     @Published var tabThirdPath: NavigationPath = .init()
 
+    @Published var fullScreenModal: Screen?
+
+    func present(_ screen: Screen) {
+        fullScreenModal = screen
+    }
+
     func push(_ screen: Screen) {
         switch selection {
         case .first:
@@ -21,7 +27,19 @@ class Router: ObservableObject {
     }
 
     func pushFullScreenWithNavigationPath(_ screen: Screen) {
-        fullScreenWithNavigationPath.append(screen)
+        var transaction = Transaction()
+        transaction.disablesAnimations = true
+        withTransaction(transaction) {
+            fullScreenWithNavigationPath.append(screen)
+        }
+    }
+
+    func popFullScreenWithNavigationPath() {
+        var transaction = Transaction()
+        transaction.disablesAnimations = true
+        withTransaction(transaction) {
+            fullScreenWithNavigationPath.removeLast()
+        }
     }
 
     let fullScreenCoverItemTrigger = PassthroughSubject<Screen, Never>()

@@ -41,6 +41,14 @@ struct ContentView: View {
                         Label("Third", systemImage: "3.circle")
                     }
                 }
+                .fullScreenCover(item: $router.fullScreenModal) { screen in
+                    NavigationStack(path: $router.fullScreenWithNavigationPath) {
+                        screen.view()
+                            .navigationDestination(for: Screen.self) { screen in
+                                screen.view()
+                            }
+                    }
+                }
             }
         }
         .task {

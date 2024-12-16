@@ -15,6 +15,12 @@ struct ViewUno: View {
                     router.push(.dos)
                 }
 
+                Button("present single full screen with navigation dos") {
+                    router.present(.dos)
+                }
+
+                Divider()
+
                 Button("present full screen dos") {
                     router.fullScreenCoverItemTrigger.send(.dos)
                 }
@@ -23,9 +29,17 @@ struct ViewUno: View {
                     router.fullScreenWithNavigationCoverItemTrigger.send(.dos)
                 }
 
+                Divider()
+
                 Button("push full screen with navigation dos") {
                     router.pushFullScreenWithNavigationPath(.dos)
                 }
+
+                Button("pop full screen with navigation") {
+                    router.popFullScreenWithNavigationPath()
+                }
+
+                Divider()
 
                 Button("dismiss") {
                     dismiss()
