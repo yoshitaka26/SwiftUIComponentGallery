@@ -6,27 +6,8 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXContainerItemProxy section */
-		E4B6ADF32CF16C8F00D30967 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E4B6ADD82CF16C8E00D30967 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E4B6ADDF2CF16C8E00D30967;
-			remoteInfo = iOS18SwiftUIComponentGallery;
-		};
-		E4B6ADFD2CF16C8F00D30967 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E4B6ADD82CF16C8E00D30967 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E4B6ADDF2CF16C8E00D30967;
-			remoteInfo = iOS18SwiftUIComponentGallery;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		E4B6ADE02CF16C8E00D30967 /* iOS18SwiftUIComponentGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS18SwiftUIComponentGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4B6ADF22CF16C8F00D30967 /* iOS18SwiftUIComponentGalleryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOS18SwiftUIComponentGalleryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4B6ADFC2CF16C8F00D30967 /* iOS18SwiftUIComponentGalleryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOS18SwiftUIComponentGalleryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -35,34 +16,10 @@
 			path = iOS18SwiftUIComponentGallery;
 			sourceTree = "<group>";
 		};
-		E4B6ADF52CF16C8F00D30967 /* iOS18SwiftUIComponentGalleryTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = iOS18SwiftUIComponentGalleryTests;
-			sourceTree = "<group>";
-		};
-		E4B6ADFF2CF16C8F00D30967 /* iOS18SwiftUIComponentGalleryUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = iOS18SwiftUIComponentGalleryUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E4B6ADDD2CF16C8E00D30967 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E4B6ADEF2CF16C8F00D30967 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E4B6ADF92CF16C8F00D30967 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,8 +33,6 @@
 			isa = PBXGroup;
 			children = (
 				E4B6ADE22CF16C8E00D30967 /* iOS18SwiftUIComponentGallery */,
-				E4B6ADF52CF16C8F00D30967 /* iOS18SwiftUIComponentGalleryTests */,
-				E4B6ADFF2CF16C8F00D30967 /* iOS18SwiftUIComponentGalleryUITests */,
 				E4B6ADE12CF16C8E00D30967 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,8 +41,6 @@
 			isa = PBXGroup;
 			children = (
 				E4B6ADE02CF16C8E00D30967 /* iOS18SwiftUIComponentGallery.app */,
-				E4B6ADF22CF16C8F00D30967 /* iOS18SwiftUIComponentGalleryTests.xctest */,
-				E4B6ADFC2CF16C8F00D30967 /* iOS18SwiftUIComponentGalleryUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,52 +70,6 @@
 			productReference = E4B6ADE02CF16C8E00D30967 /* iOS18SwiftUIComponentGallery.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E4B6ADF12CF16C8F00D30967 /* iOS18SwiftUIComponentGalleryTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E4B6AE092CF16C8F00D30967 /* Build configuration list for PBXNativeTarget "iOS18SwiftUIComponentGalleryTests" */;
-			buildPhases = (
-				E4B6ADEE2CF16C8F00D30967 /* Sources */,
-				E4B6ADEF2CF16C8F00D30967 /* Frameworks */,
-				E4B6ADF02CF16C8F00D30967 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E4B6ADF42CF16C8F00D30967 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				E4B6ADF52CF16C8F00D30967 /* iOS18SwiftUIComponentGalleryTests */,
-			);
-			name = iOS18SwiftUIComponentGalleryTests;
-			packageProductDependencies = (
-			);
-			productName = iOS18SwiftUIComponentGalleryTests;
-			productReference = E4B6ADF22CF16C8F00D30967 /* iOS18SwiftUIComponentGalleryTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		E4B6ADFB2CF16C8F00D30967 /* iOS18SwiftUIComponentGalleryUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E4B6AE0C2CF16C8F00D30967 /* Build configuration list for PBXNativeTarget "iOS18SwiftUIComponentGalleryUITests" */;
-			buildPhases = (
-				E4B6ADF82CF16C8F00D30967 /* Sources */,
-				E4B6ADF92CF16C8F00D30967 /* Frameworks */,
-				E4B6ADFA2CF16C8F00D30967 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E4B6ADFE2CF16C8F00D30967 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				E4B6ADFF2CF16C8F00D30967 /* iOS18SwiftUIComponentGalleryUITests */,
-			);
-			name = iOS18SwiftUIComponentGalleryUITests;
-			packageProductDependencies = (
-			);
-			productName = iOS18SwiftUIComponentGalleryUITests;
-			productReference = E4B6ADFC2CF16C8F00D30967 /* iOS18SwiftUIComponentGalleryUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -175,14 +82,6 @@
 				TargetAttributes = {
 					E4B6ADDF2CF16C8E00D30967 = {
 						CreatedOnToolsVersion = 16.1;
-					};
-					E4B6ADF12CF16C8F00D30967 = {
-						CreatedOnToolsVersion = 16.1;
-						TestTargetID = E4B6ADDF2CF16C8E00D30967;
-					};
-					E4B6ADFB2CF16C8F00D30967 = {
-						CreatedOnToolsVersion = 16.1;
-						TestTargetID = E4B6ADDF2CF16C8E00D30967;
 					};
 				};
 			};
@@ -201,28 +100,12 @@
 			projectRoot = "";
 			targets = (
 				E4B6ADDF2CF16C8E00D30967 /* iOS18SwiftUIComponentGallery */,
-				E4B6ADF12CF16C8F00D30967 /* iOS18SwiftUIComponentGalleryTests */,
-				E4B6ADFB2CF16C8F00D30967 /* iOS18SwiftUIComponentGalleryUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E4B6ADDE2CF16C8E00D30967 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E4B6ADF02CF16C8F00D30967 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E4B6ADFA2CF16C8F00D30967 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -239,34 +122,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E4B6ADEE2CF16C8F00D30967 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E4B6ADF82CF16C8F00D30967 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		E4B6ADF42CF16C8F00D30967 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E4B6ADDF2CF16C8E00D30967 /* iOS18SwiftUIComponentGallery */;
-			targetProxy = E4B6ADF32CF16C8F00D30967 /* PBXContainerItemProxy */;
-		};
-		E4B6ADFE2CF16C8F00D30967 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E4B6ADDF2CF16C8E00D30967 /* iOS18SwiftUIComponentGallery */;
-			targetProxy = E4B6ADFD2CF16C8F00D30967 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E4B6AE042CF16C8F00D30967 /* Debug */ = {
@@ -393,10 +249,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iOS18SwiftUIComponentGallery/Preview Content\"";
-				DEVELOPMENT_TEAM = VKV3Y2GW5Q;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -411,6 +267,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yoshitaka.iOS18SwiftUIComponentGallery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -422,10 +279,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iOS18SwiftUIComponentGallery/Preview Content\"";
-				DEVELOPMENT_TEAM = VKV3Y2GW5Q;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -440,81 +297,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yoshitaka.iOS18SwiftUIComponentGallery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		E4B6AE0A2CF16C8F00D30967 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = VKV3Y2GW5Q;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yoshitaka.iOS18SwiftUIComponentGalleryTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS18SwiftUIComponentGallery.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iOS18SwiftUIComponentGallery";
-			};
-			name = Debug;
-		};
-		E4B6AE0B2CF16C8F00D30967 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = VKV3Y2GW5Q;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yoshitaka.iOS18SwiftUIComponentGalleryTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS18SwiftUIComponentGallery.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iOS18SwiftUIComponentGallery";
-			};
-			name = Release;
-		};
-		E4B6AE0D2CF16C8F00D30967 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = VKV3Y2GW5Q;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yoshitaka.iOS18SwiftUIComponentGalleryUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = iOS18SwiftUIComponentGallery;
-			};
-			name = Debug;
-		};
-		E4B6AE0E2CF16C8F00D30967 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = VKV3Y2GW5Q;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yoshitaka.iOS18SwiftUIComponentGalleryUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = iOS18SwiftUIComponentGallery;
 			};
 			name = Release;
 		};
@@ -535,24 +321,6 @@
 			buildConfigurations = (
 				E4B6AE072CF16C8F00D30967 /* Debug */,
 				E4B6AE082CF16C8F00D30967 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E4B6AE092CF16C8F00D30967 /* Build configuration list for PBXNativeTarget "iOS18SwiftUIComponentGalleryTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E4B6AE0A2CF16C8F00D30967 /* Debug */,
-				E4B6AE0B2CF16C8F00D30967 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E4B6AE0C2CF16C8F00D30967 /* Build configuration list for PBXNativeTarget "iOS18SwiftUIComponentGalleryUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E4B6AE0D2CF16C8F00D30967 /* Debug */,
-				E4B6AE0E2CF16C8F00D30967 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
