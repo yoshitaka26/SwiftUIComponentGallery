@@ -30,6 +30,8 @@
 		4AE30F202C3681BB00557030 /* ColorScalingHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE30F1F2C3681BB00557030 /* ColorScalingHeader.swift */; };
 		4AE30F222C36826000557030 /* RequestScalingHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE30F212C36826000557030 /* RequestScalingHeader.swift */; };
 		4AE30F272C37B6A200557030 /* StickyHeaderTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE30F262C37B6A200557030 /* StickyHeaderTabView.swift */; };
+		4AEBF77C2DCDC8AB006CFC65 /* ExyteChat in Frameworks */ = {isa = PBXBuildFile; productRef = 4AEBF77B2DCDC8AB006CFC65 /* ExyteChat */; };
+		4AEBF77F2DCDCA10006CFC65 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEBF77E2DCDCA10006CFC65 /* ChatView.swift */; };
 		E418D4B42C2FF1A0001313AA /* SwiftUIComponentGalleryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E418D4B32C2FF1A0001313AA /* SwiftUIComponentGalleryApp.swift */; };
 		E418D4B62C2FF1A0001313AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E418D4B52C2FF1A0001313AA /* ContentView.swift */; };
 		E418D4BA2C2FF1A1001313AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E418D4B92C2FF1A1001313AA /* Assets.xcassets */; };
@@ -64,6 +66,7 @@
 		4AE30F1F2C3681BB00557030 /* ColorScalingHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorScalingHeader.swift; sourceTree = "<group>"; };
 		4AE30F212C36826000557030 /* RequestScalingHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestScalingHeader.swift; sourceTree = "<group>"; };
 		4AE30F262C37B6A200557030 /* StickyHeaderTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeaderTabView.swift; sourceTree = "<group>"; };
+		4AEBF77E2DCDCA10006CFC65 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		E418D4B02C2FF19F001313AA /* SwiftUIComponentGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIComponentGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E418D4B32C2FF1A0001313AA /* SwiftUIComponentGalleryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIComponentGalleryApp.swift; sourceTree = "<group>"; };
 		E418D4B52C2FF1A0001313AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,6 +87,7 @@
 			files = (
 				4AA69B4D2C3504DA0061D48A /* PagerTabStripView in Frameworks */,
 				4AE30F1B2C3546BB00557030 /* ScalingHeaderScrollView in Frameworks */,
+				4AEBF77C2DCDC8AB006CFC65 /* ExyteChat in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +147,14 @@
 			path = StickyHeader;
 			sourceTree = "<group>";
 		};
+		4AEBF77D2DCDC9FD006CFC65 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				4AEBF77E2DCDCA10006CFC65 /* ChatView.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
 		E418D4A72C2FF19F001313AA = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +174,7 @@
 		E418D4B22C2FF19F001313AA /* SwiftUIComponentGallery */ = {
 			isa = PBXGroup;
 			children = (
+				4AEBF77D2DCDC9FD006CFC65 /* Chat */,
 				E418D4B92C2FF1A1001313AA /* Assets.xcassets */,
 				E418D4C32C2FF2D0001313AA /* Charts */,
 				E418D4CA2C3023CF001313AA /* Common */,
@@ -227,6 +240,7 @@
 			packageProductDependencies = (
 				4AA69B4C2C3504DA0061D48A /* PagerTabStripView */,
 				4AE30F1A2C3546BB00557030 /* ScalingHeaderScrollView */,
+				4AEBF77B2DCDC8AB006CFC65 /* ExyteChat */,
 			);
 			productName = SwiftUIComponentGallery;
 			productReference = E418D4B02C2FF19F001313AA /* SwiftUIComponentGallery.app */;
@@ -259,6 +273,7 @@
 			packageReferences = (
 				4AA69B4B2C3504DA0061D48A /* XCRemoteSwiftPackageReference "PagerTabStripView" */,
 				4AE30F192C3546BB00557030 /* XCRemoteSwiftPackageReference "ScalingHeaderScrollView" */,
+				4AEBF77A2DCDC8AB006CFC65 /* XCRemoteSwiftPackageReference "Chat" */,
 			);
 			productRefGroup = E418D4B12C2FF19F001313AA /* Products */;
 			projectDirPath = "";
@@ -308,6 +323,7 @@
 				4AA69B4F2C3505050061D48A /* PagerTabStripSampleView.swift in Sources */,
 				4A9CE7472C897BA300CA0BBB /* DragAndDropView.swift in Sources */,
 				E418D4B42C2FF1A0001313AA /* SwiftUIComponentGalleryApp.swift in Sources */,
+				4AEBF77F2DCDCA10006CFC65 /* ChatView.swift in Sources */,
 				E418D4CC2C3023E7001313AA /* TimeRangePicker.swift in Sources */,
 				4AE30F202C3681BB00557030 /* ColorScalingHeader.swift in Sources */,
 				4AE30F222C36826000557030 /* RequestScalingHeader.swift in Sources */,
@@ -540,6 +556,14 @@
 				minimumVersion = 1.1.3;
 			};
 		};
+		4AEBF77A2DCDC8AB006CFC65 /* XCRemoteSwiftPackageReference "Chat" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:exyte/Chat.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -552,6 +576,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4AE30F192C3546BB00557030 /* XCRemoteSwiftPackageReference "ScalingHeaderScrollView" */;
 			productName = ScalingHeaderScrollView;
+		};
+		4AEBF77B2DCDC8AB006CFC65 /* ExyteChat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4AEBF77A2DCDC8AB006CFC65 /* XCRemoteSwiftPackageReference "Chat" */;
+			productName = ExyteChat;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

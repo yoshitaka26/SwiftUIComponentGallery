@@ -13,6 +13,11 @@ struct ContentView: View {
         NavigationStack {
             List {
                 NavigationLink {
+                    ChatListView()
+                } label: {
+                    Text("チャット画面")
+                }
+                NavigationLink {
                     DragAndDropView()
                 } label: {
                     Text("ドラッグアンドドロップ")
